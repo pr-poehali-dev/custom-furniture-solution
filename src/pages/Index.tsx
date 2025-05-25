@@ -1,18 +1,16 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import HeroSection from "@/components/sections/HeroSection";
+import ServicesSection from "@/components/sections/ServicesSection";
+import AdvantagesSection from "@/components/sections/AdvantagesSection";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import { processSteps, stats } from "@/data/constants";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20">
+      <HeroSection />
+      <ServicesSection />
+      <AdvantagesSection />
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold text-slate-800 mb-6 font-['Montserrat']">
             PRO МЕБЕЛЬ
